@@ -1,0 +1,12 @@
+# AWS Credentials
+AccessKeyID:
+
+SecretKey:
+
+Region: us-east-1
+
+# Optional folder prefix to upload images to
+Prefix: qr-codes
+
+# Name of S3 Bucket
+BucketName:
