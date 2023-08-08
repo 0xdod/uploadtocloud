@@ -24,14 +24,13 @@ func loadConfig() {
 	viper.AddConfigPath(".")
 	viper.SetConfigType("yaml")
 	viper.SetConfigName(".config")
-	viper.AutomaticEnv() // read in environment variables that match
 	viper.SetDefault("bucketname", "uploadtocloud")
-
-
+	viper.AutomaticEnv() // read in environment variables that match
+	
 	if err := viper.ReadInConfig(); err != nil {
 		fmt.Fprintln(os.Stderr, "Cannot read config file", viper.ConfigFileUsed())
 		os.Exit(1)
 	}
 	// fmt.Println("Using config file:", viper.ConfigFileUsed()
-	fmt.Println(viper.AllSettings())
+	// fmt.Println(viper.AllSettings())
 }

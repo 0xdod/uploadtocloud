@@ -23,6 +23,7 @@ uploadtocloud /path/to/file1.txt /path/to/file2.txt
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
+	Version: "0.1",
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -45,5 +46,3 @@ func init() {
 	// when this action is called directly.
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
-
-
