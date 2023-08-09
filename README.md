@@ -43,7 +43,7 @@ After installing UploadToCloud, you need to configure it with your cloud storage
 ## Supported Cloud Services
 
 UploadToCloud currently supports the following cloud storage services:
-[x] Amazon S3
+- [x] Amazon S3
 
 Additional cloud service support is planned for future updates.
 
